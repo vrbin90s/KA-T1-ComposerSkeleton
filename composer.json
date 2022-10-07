@@ -1,0 +1,43 @@
+{
+    "name": "kesdev/composer-package-skeleton",
+    "description": "KiloAcademy introduction task - making custom composer package skeleton",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kestutis.sebelskis",
+            "email": "agreement.doc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-4": {
+            "KesDev\\ComposerPackageSkeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KesDev\\ComposerPackageSkeleton\\Tests\\": "tests/"
+        }
+    },
+
+    "require-dev": {
+        "phpstan/phpstan": "1.9.x-dev",
+        "phpunit/phpunit": "10.0.x-dev"
+    },
+
+    "require": {
+        "php": "^8.0",
+        "guzzle/guzzle": "3.9.x-dev"
+    },
+
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit -c ./phpunit.xml.dist",
+        "phpstan": "./vendor/bin/phpstan analyse -c phpstan.neon.dist --memory-limit=2G",
+        "all": [
+            "@phpunit",
+            "@phpstan"
+        ]
+    }
+}

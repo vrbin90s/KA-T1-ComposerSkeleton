@@ -1,0 +1,1 @@
+<?php /* Hello! I'm empty page */
