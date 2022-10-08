@@ -2,12 +2,14 @@
 
 namespace KesDev\ComposerPackageSkeleton\Tests\Unit;
 
+use KesDev\ComposerPackageSkeleton\Simple\Example;
 use PHPUnit\Framework\TestCase;
 
 class ExampleTest extends TestCase
 {
     public function testFailure(): void
     {
-        $this->assertGreaterThan(1, 3);
+        $example = new Example;
+        $this->assertGreaterThan($example->numbers(1), 3);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace KesDev\ComposerPackageSkeleton\Src;
+namespace KesDev\ComposerPackageSkeleton\Simple;
 
 class Example
 {
