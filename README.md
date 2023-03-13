@@ -1,6 +1,6 @@
-# Kilo Academy - Composer Skeleton
+#  Composer Skeleton
 
-This is KiloAcademy Introductional task: making custom composer skeleton
+This is a custom composer skeleton
 
 
 # Install
